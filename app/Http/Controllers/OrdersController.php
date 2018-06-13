@@ -28,7 +28,8 @@ class OrdersController extends Controller
     public function getView($ordersId)
     {
           
-        $orders = orders::find($ordersId)->products()->orderBy('productsID')->get();
+        $orders = orders::find($ordersId)->products()->orderBy('productsID')->withPivot(['o_quantity','o_priceBegin','o_priceEnd'])->get();
+
         return view('view')->with(compact('orders'));
     }
 }

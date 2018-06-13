@@ -25,13 +25,11 @@
                     <tbody>
                            
                         @foreach($orders as $order)
-                                        
-                            <tr>
                             <th scope="row">{{ $order->productsId}}</th>
                             <th scope="row" >{{ $order->description }}</th>
-                            <th scope="row" >10</th>
-                            <th scope="row" >3</th>
-                            <th scope="row" >4</th>
+                            <th scope="row" >{{$order->pivot->o_quantity}}</th>
+                            <th scope="row" >{{$order->pivot->o_priceBegin}}</th>
+                            <th scope="row" >{{$order->pivot->o_priceEnd}}</th>
                             </tr>
                         @endforeach
                     </tbody>
