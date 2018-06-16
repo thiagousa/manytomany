@@ -11,11 +11,7 @@
 |
 */
 
+// Orders
 
-
-    ## ORDERS
-
-        Route::get('/','OrdersController@getIndex');
-        Route::get('/{ordersId}','OrdersController@getView');
-
-  
+Route::get('/', 'OrdersController@getIndex')->name('orders.index');
+Route::get('/{ordersId}', 'OrdersController@getView')->name('orders.show');
