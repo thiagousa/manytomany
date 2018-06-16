@@ -4,7 +4,6 @@ use Illuminate\Database\Seeder;
 
 class OrdersProductsPromotorsTableSeeder extends Seeder
 {
-
     /**
      * Auto generated seed file
      *
@@ -12,13 +11,10 @@ class OrdersProductsPromotorsTableSeeder extends Seeder
      */
     public function run()
     {
-        
-
         \DB::table('orders_products_promotors')->delete();
-        
-        \DB::table('orders_products_promotors')->insert(array (
-            0 => 
-            array (
+
+        \DB::table('orders_products_promotors')->insert([
+            0 => [
                 'productsId' => 1,
                 'ordersId' => 1,
                 'o_priceBegin' => '2.36',
@@ -26,9 +22,8 @@ class OrdersProductsPromotorsTableSeeder extends Seeder
                 'o_quantity' => 2,
                 'created_at' => '2018-06-12 15:34:41',
                 'updated_at' => '2018-06-12 15:34:41',
-            ),
-            1 => 
-            array (
+            ],
+            1 => [
                 'productsId' => 2,
                 'ordersId' => 1,
                 'o_priceBegin' => '3.67',
@@ -36,9 +31,8 @@ class OrdersProductsPromotorsTableSeeder extends Seeder
                 'o_quantity' => 2,
                 'created_at' => '2018-06-12 15:34:41',
                 'updated_at' => '2018-06-12 15:34:41',
-            ),
-            2 => 
-            array (
+            ],
+            2 => [
                 'productsId' => 4,
                 'ordersId' => 1,
                 'o_priceBegin' => '3.67',
@@ -46,9 +40,8 @@ class OrdersProductsPromotorsTableSeeder extends Seeder
                 'o_quantity' => 45,
                 'created_at' => '2018-06-12 15:34:41',
                 'updated_at' => '2018-06-12 15:34:41',
-            ),
-            3 => 
-            array (
+            ],
+            3 => [
                 'productsId' => 5,
                 'ordersId' => 2,
                 'o_priceBegin' => '23',
@@ -56,9 +49,8 @@ class OrdersProductsPromotorsTableSeeder extends Seeder
                 'o_quantity' => 4,
                 'created_at' => '2018-06-12 15:34:41',
                 'updated_at' => '2018-06-12 15:34:41',
-            ),
-            4 => 
-            array (
+            ],
+            4 => [
                 'productsId' => 7,
                 'ordersId' => 2,
                 'o_priceBegin' => '34',
@@ -66,9 +58,8 @@ class OrdersProductsPromotorsTableSeeder extends Seeder
                 'o_quantity' => 5,
                 'created_at' => '2018-06-12 15:34:41',
                 'updated_at' => '2018-06-12 15:34:41',
-            ),
-            5 => 
-            array (
+            ],
+            5 => [
                 'productsId' => 8,
                 'ordersId' => 2,
                 'o_priceBegin' => '32',
@@ -76,9 +67,8 @@ class OrdersProductsPromotorsTableSeeder extends Seeder
                 'o_quantity' => 9,
                 'created_at' => '2018-06-12 15:34:41',
                 'updated_at' => '2018-06-12 15:34:41',
-            ),
-            6 => 
-            array (
+            ],
+            6 => [
                 'productsId' => 9,
                 'ordersId' => 3,
                 'o_priceBegin' => '45',
@@ -86,9 +76,7 @@ class OrdersProductsPromotorsTableSeeder extends Seeder
                 'o_quantity' => 4,
                 'created_at' => '2018-06-12 15:34:41',
                 'updated_at' => '2018-06-12 15:34:41',
-            ),
-        ));
-        
-        
+            ],
+        ]);
     }
 }

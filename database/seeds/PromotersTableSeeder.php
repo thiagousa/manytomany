@@ -4,7 +4,6 @@ use Illuminate\Database\Seeder;
 
 class PromotersTableSeeder extends Seeder
 {
-
     /**
      * Auto generated seed file
      *
@@ -12,13 +11,10 @@ class PromotersTableSeeder extends Seeder
      */
     public function run()
     {
-        
-
         \DB::table('promoters')->delete();
-        
-        \DB::table('promoters')->insert(array (
-            0 => 
-            array (
+
+        \DB::table('promoters')->insert([
+            0 => [
                 'promotersId' => 1,
                 'name' => 'Amber',
                 'email' => 'teste"teste.com',
@@ -30,12 +26,11 @@ class PromotersTableSeeder extends Seeder
                 'country' => 'US',
                 'zipcode' => '30080',
                 'sponsor' => 'Amber',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
                 'created_at' => '2018-06-12 15:34:41',
                 'updated_at' => '2018-06-12 15:34:41',
-            ),
-            1 => 
-            array (
+            ],
+            1 => [
                 'promotersId' => 2,
                 'name' => 'Nicole',
                 'email' => 'teste"tes45.com',
@@ -47,12 +42,10 @@ class PromotersTableSeeder extends Seeder
                 'country' => 'US',
                 'zipcode' => '30067',
                 'sponsor' => 'Jose',
-                'deleted_at' => NULL,
+                'deleted_at' => null,
                 'created_at' => '2018-06-12 15:34:41',
                 'updated_at' => '2018-06-12 15:34:41',
-            ),
-        ));
-        
-        
+            ],
+        ]);
     }
 }

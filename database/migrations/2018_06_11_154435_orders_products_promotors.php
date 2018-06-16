@@ -14,8 +14,6 @@ class OrdersProductsPromotors extends Migration
     public function up()
     {
         Schema::create('orders_products_promotors', function (Blueprint $table) {
-
-
             $table->integer('productsId')->unsigned();
             $table->foreign('productsId')->references('productsId')->on('products')->onDelete('cascade');
             $table->integer('ordersId')->unsigned();
@@ -23,8 +21,6 @@ class OrdersProductsPromotors extends Migration
             $table->string('o_priceBegin')->nullable();
             $table->string('o_priceEnd')->nullable();
             $table->integer('o_quantity')->nullable();
-
-
 
             $table->timestamps();
         });

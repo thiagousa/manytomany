@@ -12,7 +12,4 @@ class Promoters extends Model
     protected $table = 'promoters';
 
     protected $primaryKey = 'promotersId';
-
-
-
 }

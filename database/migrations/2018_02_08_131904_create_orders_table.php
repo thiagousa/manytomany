@@ -16,7 +16,7 @@ class CreateOrdersTable extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->increments('ordersId')->unique();
             //$table->integer('productsId')->unsigned();
-           // $table->foreign('productsId')->references('productsId')->on('products');
+            // $table->foreign('productsId')->references('productsId')->on('products');
             $table->integer('promotersId')->unsigned();
             $table->foreign('promotersId')->references('promotersId')->on('promoters')->onDelete('cascade');
             $table->integer('finalValue')->nullable();
@@ -33,9 +33,8 @@ class CreateOrdersTable extends Migration
      */
     public function down()
     {
-        if (Schema::hasTable('orders'))
-        {
-           // Schema::dropForeign('orders_productsid_foreign');
+        if (Schema::hasTable('orders')) {
+            // Schema::dropForeign('orders_productsid_foreign');
             Schema::drop('orders');
         }
     }
