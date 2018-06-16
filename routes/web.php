@@ -13,5 +13,5 @@
 
 // Orders
 
-Route::get('/', 'OrdersController@getIndex')->name('orders.index');
-Route::get('/{ordersId}', 'OrdersController@getView')->name('orders.show');
+Route::get('/', 'OrdersController@index')->name('orders.index');
+Route::get('{ordersId}/show', 'OrdersController@show')->name('orders.show');
