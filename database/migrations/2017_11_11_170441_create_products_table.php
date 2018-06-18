@@ -43,8 +43,7 @@ class CreateProductsTable extends Migration
      */
     public function down()
     {
-        if (Schema::hasTable('products'))
-        {
+        if (Schema::hasTable('products')) {
             Schema::drop('products');
         }
     }

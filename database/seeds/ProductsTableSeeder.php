@@ -4,7 +4,6 @@ use Illuminate\Database\Seeder;
 
 class ProductsTableSeeder extends Seeder
 {
-
     /**
      * Auto generated seed file
      *
@@ -12,13 +11,10 @@ class ProductsTableSeeder extends Seeder
      */
     public function run()
     {
-        
-
         \DB::table('products')->delete();
-        
-        \DB::table('products')->insert(array (
-            0 => 
-            array (
+
+        \DB::table('products')->insert([
+            0 => [
                 'productsId' => 1,
                 'description' => 'Guarana antarctica 2 Litros',
                 'shortName' => 'Guarana antarctica 2 Litros',
@@ -36,12 +32,11 @@ class ProductsTableSeeder extends Seeder
                 'max' => 0.0,
                 'discountMoney' => 0.0,
                 'discount' => 0,
-                'deleted_at' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            1 => 
-            array (
+                'deleted_at' => null,
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            1 => [
                 'productsId' => 2,
                 'description' => 'GUARANA ANTARCTICA DIET 12 PACK',
                 'shortName' => 'GUARANA ANTARCTICA DIET 12 PACK',
@@ -59,12 +54,11 @@ class ProductsTableSeeder extends Seeder
                 'max' => 0.0,
                 'discountMoney' => 0.0,
                 'discount' => 0,
-                'deleted_at' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            2 => 
-            array (
+                'deleted_at' => null,
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            2 => [
                 'productsId' => 4,
                 'description' => 'guarana antarctica 12 pack lata',
                 'shortName' => 'guarana antarctica 12 pack lata',
@@ -82,12 +76,11 @@ class ProductsTableSeeder extends Seeder
                 'max' => 0.0,
                 'discountMoney' => 0.0,
                 'discount' => 0,
-                'deleted_at' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            3 => 
-            array (
+                'deleted_at' => null,
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            3 => [
                 'productsId' => 5,
                 'description' => 'GUARANA ANTARCTICA 355 ML',
                 'shortName' => 'GUARANA ANTARCTICA 355 ML',
@@ -105,12 +98,11 @@ class ProductsTableSeeder extends Seeder
                 'max' => 0.0,
                 'discountMoney' => 0.0,
                 'discount' => 0,
-                'deleted_at' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            4 => 
-            array (
+                'deleted_at' => null,
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            4 => [
                 'productsId' => 6,
             'description' => 'TAMPICO CITRUS PUNCH 1 GAL(3.78L)',
             'shortName' => 'TAMPICO CITRUS PUNCH 1GAL (3.78 L )',
@@ -128,12 +120,11 @@ class ProductsTableSeeder extends Seeder
                 'max' => 0.0,
                 'discountMoney' => 0.0,
                 'discount' => 0,
-                'deleted_at' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            5 => 
-            array (
+                'deleted_at' => null,
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            5 => [
                 'productsId' => 7,
             'description' => 'TAMPICO TROPICAL PUNCH 1 GAL(3.78L)',
             'shortName' => 'TAMPICO TROPICAL PUNCH 1 GAL (3.78L)',
@@ -151,12 +142,11 @@ class ProductsTableSeeder extends Seeder
                 'max' => 0.0,
                 'discountMoney' => 0.0,
                 'discount' => 0,
-                'deleted_at' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            6 => 
-            array (
+                'deleted_at' => null,
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            6 => [
                 'productsId' => 8,
             'description' => 'AGUA CRYSTAL SPRINGS 2.5 GAL (9.46L)',
             'shortName' => 'AGUA CRYSTAL SPRINGS 2.5 GAL (9.46L)',
@@ -174,12 +164,11 @@ class ProductsTableSeeder extends Seeder
                 'max' => 0.0,
                 'discountMoney' => 0.0,
                 'discount' => 0,
-                'deleted_at' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            7 => 
-            array (
+                'deleted_at' => null,
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            7 => [
                 'productsId' => 9,
                 'description' => 'suco maguary maracuja concentrado 500 ml',
                 'shortName' => 'suco maguary maracuja concentrado 500 ml',
@@ -197,12 +186,11 @@ class ProductsTableSeeder extends Seeder
                 'max' => 0.0,
                 'discountMoney' => 0.0,
                 'discount' => 0,
-                'deleted_at' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            8 => 
-            array (
+                'deleted_at' => null,
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            8 => [
                 'productsId' => 10,
                 'description' => 'JUMEX TAMARIND NECTAR 335ML',
                 'shortName' => 'JUMEX TAMARIND NECTAR 335ML',
@@ -220,12 +208,11 @@ class ProductsTableSeeder extends Seeder
                 'max' => 0.0,
                 'discountMoney' => 0.0,
                 'discount' => 0,
-                'deleted_at' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            9 => 
-            array (
+                'deleted_at' => null,
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            9 => [
                 'productsId' => 11,
                 'description' => 'JUMEX GUAVA NECTAR 335ML',
                 'shortName' => 'JUMEX GUAVA NECTAR 335ML',
@@ -243,12 +230,11 @@ class ProductsTableSeeder extends Seeder
                 'max' => 0.0,
                 'discountMoney' => 0.0,
                 'discount' => 0,
-                'deleted_at' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            10 => 
-            array (
+                'deleted_at' => null,
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            10 => [
                 'productsId' => 12,
                 'description' => 'JUMEX PINEAPPLE NECTAR 335ML',
                 'shortName' => 'JUMEX PINEAPPLE NECTAR 335ML',
@@ -266,12 +252,11 @@ class ProductsTableSeeder extends Seeder
                 'max' => 0.0,
                 'discountMoney' => 0.0,
                 'discount' => 0,
-                'deleted_at' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            11 => 
-            array (
+                'deleted_at' => null,
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            11 => [
                 'productsId' => 13,
                 'description' => 'JUMEX STRAWBERRY BANANA NECTAR 335ML',
                 'shortName' => 'JUMEX STRAWBERRY BANANA NECTAR 335ML',
@@ -289,12 +274,11 @@ class ProductsTableSeeder extends Seeder
                 'max' => 0.0,
                 'discountMoney' => 0.0,
                 'discount' => 0,
-                'deleted_at' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            12 => 
-            array (
+                'deleted_at' => null,
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            12 => [
                 'productsId' => 14,
                 'description' => 'JUMEX PAPAYA PINEAPPLE NECTAR 335ML',
                 'shortName' => 'JUMEX PAPAYA PINEAPPLE NECTAR 335ML',
@@ -312,12 +296,11 @@ class ProductsTableSeeder extends Seeder
                 'max' => 0.0,
                 'discountMoney' => 0.0,
                 'discount' => 0,
-                'deleted_at' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            13 => 
-            array (
+                'deleted_at' => null,
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            13 => [
                 'productsId' => 15,
                 'description' => 'FOCO COCONUT JUICE 350ML',
                 'shortName' => 'FOCO COCONUT JUICE 350ML',
@@ -335,12 +318,11 @@ class ProductsTableSeeder extends Seeder
                 'max' => 0.0,
                 'discountMoney' => 0.0,
                 'discount' => 0,
-                'deleted_at' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            14 => 
-            array (
+                'deleted_at' => null,
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            14 => [
                 'productsId' => 16,
                 'description' => 'CAPRISUN GRAPE 200ML',
                 'shortName' => 'CAPRISUN GRAPE 200ML',
@@ -358,12 +340,11 @@ class ProductsTableSeeder extends Seeder
                 'max' => 0.0,
                 'discountMoney' => 0.0,
                 'discount' => 0,
-                'deleted_at' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            15 => 
-            array (
+                'deleted_at' => null,
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            15 => [
                 'productsId' => 17,
                 'description' => 'GATORADE STRAWBERRY KIWI 710ML',
                 'shortName' => 'GATORADE STRAWBERRY KIWI 710ML',
@@ -381,12 +362,11 @@ class ProductsTableSeeder extends Seeder
                 'max' => 0.0,
                 'discountMoney' => 0.0,
                 'discount' => 0,
-                'deleted_at' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            16 => 
-            array (
+                'deleted_at' => null,
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            16 => [
                 'productsId' => 18,
                 'description' => 'GATORADE ORANGE 0.946L',
                 'shortName' => 'GATORADE ORANGE 0.946L',
@@ -404,12 +384,11 @@ class ProductsTableSeeder extends Seeder
                 'max' => 0.0,
                 'discountMoney' => 0.0,
                 'discount' => 0,
-                'deleted_at' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            17 => 
-            array (
+                'deleted_at' => null,
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            17 => [
                 'productsId' => 19,
                 'description' => 'FLORIDAS NATURAL 296ML',
                 'shortName' => 'FLORIDAS NATURAL 296ML',
@@ -427,12 +406,11 @@ class ProductsTableSeeder extends Seeder
                 'max' => 0.0,
                 'discountMoney' => 0.0,
                 'discount' => 0,
-                'deleted_at' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            18 => 
-            array (
+                'deleted_at' => null,
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            18 => [
                 'productsId' => 20,
                 'description' => 'MABEL DOCE DE LEITE 140g',
                 'shortName' => 'MABEL DOCE DE LEITE 140g',
@@ -450,12 +428,11 @@ class ProductsTableSeeder extends Seeder
                 'max' => 0.0,
                 'discountMoney' => 0.0,
                 'discount' => 0,
-                'deleted_at' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            19 => 
-            array (
+                'deleted_at' => null,
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            19 => [
                 'productsId' => 21,
                 'description' => 'MABEL WAFER CHOCOLATE 140g',
                 'shortName' => 'MABEL WAFER CHOCOLATE 140g',
@@ -473,12 +450,11 @@ class ProductsTableSeeder extends Seeder
                 'max' => 0.0,
                 'discountMoney' => 0.0,
                 'discount' => 0,
-                'deleted_at' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            20 => 
-            array (
+                'deleted_at' => null,
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            20 => [
                 'productsId' => 22,
                 'description' => 'MABEL WAFER DOCE DE LEITE 140g',
                 'shortName' => 'MABEL WAFER DOCE DE LEITE 140g',
@@ -496,12 +472,11 @@ class ProductsTableSeeder extends Seeder
                 'max' => 0.0,
                 'discountMoney' => 0.0,
                 'discount' => 0,
-                'deleted_at' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            21 => 
-            array (
+                'deleted_at' => null,
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            21 => [
                 'productsId' => 23,
                 'description' => 'MABEL WAFER MORANGO 140g',
                 'shortName' => 'MABEL WAFER MORANGO 140g',
@@ -519,12 +494,11 @@ class ProductsTableSeeder extends Seeder
                 'max' => 0.0,
                 'discountMoney' => 0.0,
                 'discount' => 0,
-                'deleted_at' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            22 => 
-            array (
+                'deleted_at' => null,
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            22 => [
                 'productsId' => 24,
                 'description' => 'MABEL ROSQUINHAS DE COCO 400g',
                 'shortName' => 'MABEL ROSQUINHAS DE COCO 400g',
@@ -542,12 +516,11 @@ class ProductsTableSeeder extends Seeder
                 'max' => 0.0,
                 'discountMoney' => 0.0,
                 'discount' => 0,
-                'deleted_at' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            23 => 
-            array (
+                'deleted_at' => null,
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            23 => [
                 'productsId' => 25,
                 'description' => 'MABEL MARIA 400g',
                 'shortName' => 'MABEL MARIA 400g',
@@ -565,12 +538,11 @@ class ProductsTableSeeder extends Seeder
                 'max' => 0.0,
                 'discountMoney' => 0.0,
                 'discount' => 0,
-                'deleted_at' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            24 => 
-            array (
+                'deleted_at' => null,
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+            24 => [
                 'productsId' => 26,
                 'description' => 'mabel maizena 400 gr',
                 'shortName' => 'MABEL MAIZENA 400g',
@@ -588,12 +560,10 @@ class ProductsTableSeeder extends Seeder
                 'max' => 0.0,
                 'discountMoney' => 0.0,
                 'discount' => 0,
-                'deleted_at' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-        ));
-        
-        
+                'deleted_at' => null,
+                'created_at' => null,
+                'updated_at' => null,
+            ],
+        ]);
     }
 }

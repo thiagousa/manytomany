@@ -19,6 +19,4 @@ class Products extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-
-
 }

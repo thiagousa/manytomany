@@ -18,11 +18,10 @@ class Orders extends Model
         'updated_at',
         'deleted_at'
     ];
-    public function products(){
 
-        return $this->belongsToMany('App\Products','orders_products_promotors','ordersId','productsId');
-
-
+    public function products()
+    {
+        return $this->belongsToMany('App\Products', 'orders_products_promotors', 'ordersId', 'productsId');
     }
 
     public function promoters()
@@ -30,14 +29,10 @@ class Orders extends Model
         return $this->belongsTo('App\Promoters', 'promotersId', 'promotersId');
     }
 
-
-   public function orders_products_promotors (){
-
-       return $this->belongsToMany('App\orders_products_promotors')->withPivot('o_priceBegin', 'o_priceEnd','o_quantity');
-
-   }
-
-
+    public function orders_products_promotors()
+    {
+        return $this->belongsToMany('App\orders_products_promotors')->withPivot('o_priceBegin', 'o_priceEnd', 'o_quantity');
+    }
 
     /**
      * Function to get product data through foreign key
@@ -45,5 +40,4 @@ class Orders extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-
 }

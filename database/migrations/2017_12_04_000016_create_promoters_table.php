@@ -37,8 +37,7 @@ class CreatePromotersTable extends Migration
      */
     public function down()
     {
-        if (Schema::hasTable('promoters'))
-        {
+        if (Schema::hasTable('promoters')) {
             Schema::drop('promoters');
         }
     }
