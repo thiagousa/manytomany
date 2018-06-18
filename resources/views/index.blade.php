@@ -29,7 +29,7 @@
                         <td >{{ $order->status}}</td>
                         <td>{{ $order->updated_at->format('m/d/Y')}}</td>
                         <td>
-                            <a href="{{ route('orders.show', [ 'id' => $order->ordersId ])}}">View etails</a>
+                            <a href="{{ route('orders.show', [ 'id' => $order->ordersId ])}}">View Details</a>
                         </td>
                     </tr>
                     @endforeach
