@@ -13,5 +13,9 @@
 
 // Orders
 
-Route::get('/', 'OrdersController@index')->name('orders.index');
-Route::get('{ordersId}/show', 'OrdersController@show')->name('orders.show');
+Route::get('/orders/', 'OrdersController@index')->name('orders.index');
+Route::get('/orders/{ordersId}/show', 'OrdersController@show')->name('orders.show');
+
+Auth::routes();
+
+Route::get('/', 'HomeController@index')->name('home');

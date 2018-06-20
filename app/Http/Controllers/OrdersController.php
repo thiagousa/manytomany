@@ -8,6 +8,19 @@ use App\Promoters;
 
 class OrdersController extends Controller
 {
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    //Inclusão do middleware para so acessar usuarios autenticados
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+
     public function index()
     {
         $orders = orders::with(['promoters', 'products'])->get();
