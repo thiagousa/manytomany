@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center ">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">Dashboard</div>
@@ -19,5 +19,19 @@
             </div>
         </div>
     </div>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-info border-dark">Order</div>
+
+                <div class="card-body">
+                                     <a href="{{ route('orders.index')}}">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 </div>
 @endsection
