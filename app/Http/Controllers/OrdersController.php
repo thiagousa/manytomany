@@ -25,13 +25,13 @@ class OrdersController extends Controller
     {
         $orders = orders::with(['promoters', 'products'])->get();
 
-        return view('index')->with(compact('orders'));
+        return view('orders.index')->with(compact('orders'));
     }
 
     public function show($ordersId)
     {
         $orders = orders::find($ordersId)->products()->orderBy('productsID')->withPivot(['o_quantity', 'o_priceBegin', 'o_priceEnd'])->get();
 
-        return view('show')->with(compact('orders'));
+        return view('orders.show')->with(compact('orders'));
     }
 }
