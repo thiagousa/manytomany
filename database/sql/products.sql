@@ -1,8 +1,8 @@
-INSERT INTO `products` (`productsId`, `description`, `shortName`, `brand`, `categoriesId`, `costPrice`, `salePrice`, `codeBalance`, `codeBegin`, `codeEnd`, `priceBegin`, `priceEnd`, `quantity`, `min`, `max`, `discountMoney`, `discount`, `deleted_at`, `created_at`, `updated_at`)
+INSERT INTO `products` (`productsId`, `description`, `shortName`,`costPrice`, `quantity`,`deleted_at`, `created_at`, `updated_at`)
 VALUES
-	(1,'Guarana antarctica 2 Litros','Guarana antarctica 2 Litros','',1,1.49,2.49,'','0','0','0','0',0,0.00,0.00,0.00,0,NULL,NULL,NULL),
-	(2,'GUARANA ANTARCTICA DIET 12 PACK','GUARANA ANTARCTICA DIET 12 PACK','',1,6.99,7.99,'','0','0','0','0',0,0.00,0.00,0.00,0,NULL,NULL,NULL),
-	(4,'guarana antarctica 12 pack lata','guarana antarctica 12 pack lata','',1,4.49,5.99,'','0','0','0','0',0,0.00,0.00,0.00,0,NULL,NULL,NULL),
+	(1,'Guarana antarctica 2 Litros','Guarana antarctica 2 Litros',1.49,2.49,0,NULL,NULL,NULL),
+	(2,'GUARANA ANTARCTICA DIET 12 PACK','GUARANA ANTARCTICA DIET 12 PACK',6.99,7.99,0,NULL,NULL,NULL),
+	(4,'guarana antarctica 12 pack lata','guarana antarctica 12 pack lata',4.49,5.99,0,NULL,NULL,NULL),
 	(5,'GUARANA ANTARCTICA 355 ML','GUARANA ANTARCTICA 355 ML','',1,0.39,1.79,'','0','0','0','0',0,0.00,0.00,0.00,0,NULL,NULL,NULL),
 	(6,'TAMPICO CITRUS PUNCH 1 GAL(3.78L)','TAMPICO CITRUS PUNCH 1GAL (3.78 L )','',1,0.00,2.69,'','0','0','0','0',0,0.00,0.00,0.00,0,NULL,NULL,NULL),
 	(7,'TAMPICO TROPICAL PUNCH 1 GAL(3.78L)','TAMPICO TROPICAL PUNCH 1 GAL (3.78L)','',1,0.00,1.99,'','0','0','0','0',0,0.00,0.00,0.00,0,NULL,NULL,NULL),
