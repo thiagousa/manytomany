@@ -21,7 +21,7 @@ class Orders extends Model
 
     public function products()
     {
-        return $this->belongsToMany('App\Products', 'orders_products_promotors', 'ordersId', 'productsId');
+        return $this->belongsToMany('App\Products', 'orders_products', 'ordersId', 'productsId');
     }
 
     public function promoters()
@@ -29,9 +29,9 @@ class Orders extends Model
         return $this->belongsTo('App\Promoters', 'promotersId', 'promotersId');
     }
 
-    public function orders_products_promotors()
+    public function orders_products()
     {
-        return $this->belongsToMany('App\orders_products_promotors')->withPivot('o_priceBegin', 'o_priceEnd', 'o_quantity');
+        return $this->belongsToMany('App\orders_products')->withPivot('o_priceBegin', 'o_priceEnd', 'o_quantity');
     }
 
     /**

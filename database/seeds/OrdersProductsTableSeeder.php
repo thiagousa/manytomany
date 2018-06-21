@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class OrdersProductsPromotorsTableSeeder extends Seeder
+class OrdersProductsTableSeeder extends Seeder
 {
     /**
      * Auto generated seed file
@@ -11,9 +11,9 @@ class OrdersProductsPromotorsTableSeeder extends Seeder
      */
     public function run()
     {
-        \DB::table('orders_products_promotors')->delete();
+        \DB::table('orders_products')->delete();
 
-        \DB::table('orders_products_promotors')->insert([
+        \DB::table('orders_products')->insert([
             0 => [
                 'productsId' => 1,
                 'ordersId' => 1,
