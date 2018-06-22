@@ -47,5 +47,29 @@ class PromotersTableSeeder extends Seeder
                 'updated_at' => '2018-06-12 15:34:41',
             ],
         ]);
+
+        $faker = Faker\Factory::create();
+
+        $limit = 30;
+
+        for ($i = 0; $i < $limit; $i++) {
+            DB::table('promoters')->insert([ //,
+                'promotersId' => $faker->unique()->numberBetween($min = 3, $max = 32),
+                'name' => $faker->name,
+                'email' => $faker->email,
+                'phone' => $faker->e164PhoneNumber ,
+                'cellphone' => $faker->e164PhoneNumber ,
+                'address' => $faker->streetAddress ,
+                'city' => $faker->city ,
+                'state' => $faker->stateAbbr,
+                'country' => 'US',
+                'zipcode' => $faker->postcode ,
+                'sponsor' => $faker->firstName,
+                'deleted_at' => null,
+                'created_at' => $faker->dateTime($max = 'now', $timezone = null),
+                'updated_at' => null,
+
+            ]);
+        }
     }
 }

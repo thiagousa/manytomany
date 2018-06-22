@@ -32,15 +32,23 @@ class OrdersTableSeeder extends Seeder
                 'created_at' => '2018-06-12 15:34:41',
                 'updated_at' => '2018-06-12 15:34:41',
             ],
-            2 => [
-                'ordersId' => 3,
-                'promotersId' => 1,
-                'finalValue' => 58960,
-                'status' => '1',
-                'deleted_at' => null,
+           ]);
+
+        $faker = Faker\Factory::create();
+
+        $limit = 30;
+
+        for ($i = 0; $i < $limit; $i++) {
+            DB::table('orders')->insert([ //,
+                'ordersId' => $faker->unique()->numberBetween($min = 3, $max = 32),
+                'promotersId' => $faker->numberBetween($min = 1, $max = 32),
+                'finalValue' => $faker->numberBetween($min = 10, $max = 1000),
+                'status' => $faker->numberBetween($min = 1, $max = 3),
                 'created_at' => '2018-06-12 15:34:41',
+                'deleted_at' => null,
                 'updated_at' => '2018-06-12 15:34:41',
-            ],
-        ]);
+
+            ]);
+        }
     }
 }
